@@ -2,7 +2,7 @@
 Using [oh-my-zsh](https://ohmyz.sh/), this should be inside `~/.oh-my-zsh/custom/config.zsh`
 
 ### nvim
-This sould be inside `~/.config`, use a nerdfont for icons. The background is transparent and will take your terminal background (images are cool)
+This sould be inside `~/.config`, use a nerdfont for icons I use [JetBrains Mono](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip). The background is transparent and will take your terminal background (images are cool)
 
 ### tmux
 This sould be at the root `~/` and you should add the plugin manager as well
