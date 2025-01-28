@@ -22,3 +22,7 @@ clone () {
 	git clone git@github.com:Nabil080/${1}.git
 }
 
+######### temp
+
+alias co="nc -C localhost 6667"
+alias ir="irssi -n nabil -c localhost -p 6667 -w password"
