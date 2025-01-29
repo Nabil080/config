@@ -3,3 +3,7 @@ IndentWidth: "4"
 TabWidth: "4"
 UseTab: Always
 ColumnLimit: 0
+
+# makes private/public keywords inside c++ classes indented
+AccessModifierOffset: 0
+IndentAccessModifiers: true

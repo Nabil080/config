@@ -4,6 +4,7 @@ alias edit-zsh="vim ~/.oh-my-zsh/custom/config.zsh"
 alias reload-zsh="source ~/.oh-my-zsh/custom/config.zsh"
 alias edit-nvm="vim ~/.config/nvim"
 alias edit-tmux="vim ~/.tmux.conf"
+alias edit-format="vim ~/.clang-format"
 
 ########### dev
 
