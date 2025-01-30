@@ -8,14 +8,30 @@ alias edit-format="vim ~/.clang-format"
 
 ########### dev
 
+# compil / exec
+alias comp="cc -Wall -Wextra -Werror *.c"
 alias test="make test"
 alias leak="make leak"
+# git
+alias gst="git status"
+alias gcl="git clone"
+alias ga="git add"
+alias gaa="git add ."
 alias gm="git commit -m"
+alias gp="git push"
+alias gpl="git pull"
+alias gs="git stash"
 
 ########## other
 
 alias untar="tar -xzf"
 alias vim="nvim"
+alias vi="nvim"
+# tmux
+alias tt="tmux attach -t"
+alias tl="tmux ls"
+alias td="tmux detach"
+alias tr="tmux rename"
 
 ########## functions
 
