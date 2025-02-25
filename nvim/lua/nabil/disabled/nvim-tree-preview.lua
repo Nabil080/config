@@ -1,4 +1,5 @@
 return {
+	enable = false,
 	"kyazdani42/nvim-tree.lua",
 	dependencies = {
 		{
