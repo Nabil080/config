@@ -1,3 +1,7 @@
+`./export.sh` for quick setup
+
+`./import.sh` to update the repo with local changes
+
 ### config.zsh
 Using [oh-my-zsh](https://ohmyz.sh/), this should be inside `~/.oh-my-zsh/custom/config.zsh`
 
