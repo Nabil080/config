@@ -28,6 +28,8 @@ alias untar="tar -xzf"
 alias vim="nvim"
 alias vi="nvim"
 
+alias py="python3"
+
 # tmux
 alias tl="tmux ls"
 alias ta="tmux attach -t"
@@ -41,9 +43,15 @@ alias tn="tmux new -t"
 function clone () {
 	git clone git@github.com:Nabil080/${1}.git
 }
+
+function cloneFrom () {
+	git clone git@github.com:${2}/${1}.git
+}
+
 function runCommand() {
     for d in ./*/ ; do /bin/zsh -c "(cd "$d" && "$@")"; done
 }
+
 ######### temp
 alias co="nc -C localhost 6667"
 alias ir="irssi -n nabil -c localhost -p 6667 -w password"
