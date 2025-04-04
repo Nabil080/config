@@ -7,6 +7,6 @@ return {
 		-- your config goes here
 		-- or just leave it empty :)
 		enabled = true,
-		debounce_delay = 2000,
+		debounce_delay = 2000, -- 2s delay
 	},
 }
