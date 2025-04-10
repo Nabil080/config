@@ -12,8 +12,7 @@ return {
                 yaml = { "prettier" },
                 markdown = { "prettier" },
                 cpp = { "clang-format" },
-                sql = { "sqruff" },
-                lua = { "luaformatter" }
+                lua = { "luaformatter" },
             },
             format_on_save = {
                 lsp_fallback = true,

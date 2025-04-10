@@ -37,12 +37,11 @@ return {
 
         mason_tool_installer.setup({
             ensure_installed = {
-                "prettier",     -- prettier formatter
-                "clang-format", -- cpp format
-                "hadolint",     -- docker lint
-                "sqruff",       -- sql format + lint
-                "luacheck",     -- lua linting
-                "luaformatter", -- lua format
+                "prettier",                         -- prettier formatter
+                { "eslint_d", version = "13.1.2" }, -- js/ts linter
+                "hadolint",                         -- docker lint
+                "luacheck",                         -- lua linting
+                "luaformatter",                     -- lua format
             },
         })
     end,
