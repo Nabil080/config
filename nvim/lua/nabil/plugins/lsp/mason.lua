@@ -30,6 +30,8 @@ return {
                 "ts_ls", -- Typescript & Javascript LSP
                 "docker_compose_language_service",
                 "dockerls",
+                "sqlls",
+                "lua_ls"
             },
         })
 
@@ -38,6 +40,9 @@ return {
                 "prettier",     -- prettier formatter
                 "clang-format", -- cpp format
                 "hadolint",     -- docker lint
+                "sqruff",       -- sql format + lint
+                "luacheck",     -- lua linting
+                "luaformatter", -- lua format
             },
         })
     end,
