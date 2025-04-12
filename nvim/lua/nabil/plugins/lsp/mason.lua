@@ -31,7 +31,8 @@ return {
                 "docker_compose_language_service",
                 "dockerls",
                 "sqlls",
-                "lua_ls"
+                "lua_ls",
+                "yamlls"
             },
         })
 
