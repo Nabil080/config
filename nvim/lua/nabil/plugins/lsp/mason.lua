@@ -32,7 +32,8 @@ return {
                 "dockerls",
                 "sqlls",
                 "lua_ls",
-                "yamlls"
+                "yamlls",
+                "tailwindcss"
             },
         })
 
