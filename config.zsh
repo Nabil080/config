@@ -3,7 +3,8 @@ alias edit-zsh="vim ~/.oh-my-zsh/custom/config.zsh"
 alias reload-zsh="source ~/.oh-my-zsh/custom/config.zsh"
 alias edit-nvm="vim ~/.config/nvim"
 alias edit-tmux="vim ~/.tmux.conf"
-alias edit-format="vim ~/.clang-format"
+alias edit-clang-format="vim ~/.clang-format"
+alias edit-prettier="vim ~/.prettierrc"
 
 ########### dev
 
@@ -21,6 +22,9 @@ alias gm="git commit -m"
 alias gp="git push"
 alias gpl="git pull"
 alias gs="git stash"
+
+# docker
+alias du="docker compose up --build"
 
 ########## other
 
@@ -40,16 +44,25 @@ alias tn="tmux new -t"
 
 ########## functions
 
-function clone () {
+clone () {
 	git clone git@github.com:Nabil080/${1}.git
 }
 
-function cloneFrom () {
+cloneFrom () {
 	git clone git@github.com:${2}/${1}.git
 }
 
-function runCommand() {
+runCommand() {
     for d in ./*/ ; do /bin/zsh -c "(cd "$d" && "$@")"; done
+}
+
+# $1 -> request type (GET POST..)
+# $2 -> pathname (users/register..)
+# $3 -> body (optional)
+request() {
+  /usr/bin/curl -k -X "$1" "https://localhost:8080/$2" \
+    -H "Content-Type: application/json" \
+    -d "${3:-{}}"
 }
 
 ######### temp
